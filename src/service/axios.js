@@ -1,8 +1,8 @@
 import axios from "axios";
 
-const serverBaseUrl = 'http://47.254.127.151/'
+const serverBaseUrl = 'https://47.254.127.151/'
 // const localBaseUrl = "http://127.0.0.1:8000/"
-const userAxios =  axios.create({
+const userAxios = axios.create({
     baseURL: serverBaseUrl,
     headers: {
         'Content-type': 'application/json'
@@ -18,7 +18,7 @@ const authAxios = axios.create({
 
 
 
-export default  {
+export default {
     userAxios,
     authAxios
 };
